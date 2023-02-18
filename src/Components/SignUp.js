@@ -28,7 +28,7 @@ function SignUp(props) {
     <div className="sign-container">
         
     <button className="sign-button" onClick={()=>setShow(false)}>Sign In</button>
-    <p>Already have an account</p>
+    <p>Already have an account?</p>
     </div>
     
     <form onSubmit={formHandler} className="form-container">
