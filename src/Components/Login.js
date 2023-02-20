@@ -1,27 +1,31 @@
 import React, { useState } from "react";
 import SignUp from "./SignUp";
+import { useNavigate } from "react-router-dom";
 import "./Form.css";
+import { routes } from "../routes";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(false);
+  const navigate=useNavigate();
 
   const formHandle = (e) => {
     e.preventDefault();
     const user = JSON.parse(localStorage.getItem("user"));
     if (user.email === email && user.password === password) {
       console.log("I am logged in");
-      // Allow user to log in by setting session variable or state
+      navigate(routes.gameCart)
+      
     } else {
-      console.log("I am not logged in");
-      // Display error message
+     alert("Enter valid input!")
+   
     }
     setEmail("");
     setPassword("");
   };
 
-  // console.log(email , password)
+  
 
   return (
     <div>

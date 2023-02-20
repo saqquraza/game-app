@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../routes";
 import "./Form.css";
 
 function SignUp(props) {
@@ -6,6 +8,7 @@ function SignUp(props) {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const{setShow}=props
+  const navigate=useNavigate();
 
   
 
@@ -16,6 +19,7 @@ function SignUp(props) {
     }
     else{
         localStorage.setItem("user", JSON.stringify({ email, password, name }));
+        navigate(routes.gameCart)
     }
     
     setEmail("");
