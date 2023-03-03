@@ -13,12 +13,13 @@ function Login() {
   const formHandle = (e) => {
     e.preventDefault();
     const user = JSON.parse(localStorage.getItem("user"));
-    if (user.email === email && user.password === password) {
+    if (user?.email === email && user?.password === password) {
       console.log("I am logged in");
       navigate(routes.gameCart)
       
-    } else {
-     alert("Enter valid input!")
+    } 
+    else  {
+     alert("Check the input or first create an account ")
    
     }
     setEmail("");
