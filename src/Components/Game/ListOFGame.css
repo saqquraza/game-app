@@ -3,16 +3,16 @@
     padding: 0;
   }
   section {
-    width: 80%;
-    margin: auto;
-    margin-top: 5%;
+    /* margin-top: 1%; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    background-color: #4c5370;
+    font-size: 20px;
   }
   .cards {
-    width: 250px;
-    padding: 20px;
+    /* width: 250px; */
+    padding: 16px;
   }
   .cards:hover {
     box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 0.1);
@@ -31,8 +31,8 @@
     font-weight: bold;
   }
   .details p:nth-child(2) {
-    color: grey;
-    font-size: 0.8rem;
+    color: #ffffec;
+    font-size: 15px;
   }
   .details p:nth-child(3) {
     font-weight: bolx;
@@ -41,9 +41,12 @@
   .details button {
     margin: 5px;
     padding: 5px 10px;
-    border: none;
+    /* border: none; */
     font-weight: bold;
-    background-color: skyblue;
-    outline: none;
+    background-color: #e6f0f4;
+    font-size: 18px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 10px;
   }
   
