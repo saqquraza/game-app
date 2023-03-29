@@ -23,7 +23,7 @@ function GameListing() {
   };
   return (
     <>
-      <Navbar setShow={setShow} size={cart.length} />
+      <Navbar setShow={setShow} size={cart.length} show={show}/>
       {show ? (
         <ListOfGame handleClick={handleClick} />
       ) : (

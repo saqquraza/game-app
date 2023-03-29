@@ -9,28 +9,31 @@
   }
   
   .cart_box img {
-    width: 50px;
-    height: 50px;
+  width: 40%;
+  margin: 10px;
   }
   .cart_img {
-    display: flex;
-    width: 400px;
+    width: 35%;
   }
   
   .cart_img p {
     font-weight: bold;
     margin-left: 10px;
-    font-size: 10px;
-    color: grey;
+    font-size: 14px;
+    color: #0a1417;
+    font-family: monospace;
   }
   
   .cart_box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 10px;
-    border-bottom: 2px solid skyblue;
+    border-bottom: 3px solid #436674;
     padding-bottom: 5px;
+    border-radius: 10px;
+    /* height: fit-content; */
+    background-color: #d5ca89;
   }
   
   .cart_box div:nth-child(2) button {
@@ -42,39 +45,47 @@
   .cart_box div:nth-child(3) button {
     padding: 5px 10px;
     font-weight: bold;
-    border: none;
+    /* border: none; */
     outline: none;
     color: white;
-    background-color: skyblue;
+    background-color: red;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
   }
   .cart_box div:nth-child(3) button:hover {
     background-color: darkseagreen;
   }
   .cart_box div:nth-child(3) span {
-    background-color: lightgreen;
+    background-color: #eef4ee;
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 20px;
   }
   
   .total {
     display: flex;
     justify-content: space-between;
+    margin: 20px;
   }
   
   .total span:nth-child(1) {
-    font-size: 2rem;
-    color: skyblue;
+    text-decoration: underline;
+    font-family: monospace;
+    font-size: 2.5rem;
+    color: #070f13;
     font-weight: bold;
    
   }
   
   .total span:nth-child(2) {
-    font-size: 2rem;
-    color: green;
-    font-weight: bold;
+    text-decoration: underline;
+    font-family: monospace;
+    text-shadow: 3px -1px 4px orangered;
+    /* text-align: center; */
+    font-size: 2.5rem;
+    color: #110e05;
   }
 
   .payment{
@@ -84,6 +95,13 @@
     margin: 20px;
     display: flex;
     flex-direction: row-reverse;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .payment>span:hover{
+    border-radius: 8px;
+    background-color: #ffe805;
+    padding: 8px;
   }
   
   .payment-method{
@@ -94,4 +112,21 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+  }
+
+  .enquiry-btn{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    color: red;
+    background-color: #ffe805;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .btn{
+    cursor:pointer;
+    margin: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    
   }
