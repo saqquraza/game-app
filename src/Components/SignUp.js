@@ -19,7 +19,7 @@ function SignUp(props) {
     }
     else{
         localStorage.setItem("user", JSON.stringify({ email, password, name }));
-        navigate(routes.gameCart)
+        navigate(routes.loggedIn)
     }
     
     setEmail("");

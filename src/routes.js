@@ -1,4 +1,4 @@
 export const routes={
     login:"/",
-    gameCart:"/game-list"
+    loggedIn:"/logged-in"
 }
